@@ -9,13 +9,46 @@ h1{
 body{
     margin: 0;
     padding: 0;
-    font-family:  'Josefin Sans';
+    font-family:  'Josefin Sans', sans-serif;
     //font-weight: 400;
     font-size: $fontSizeMain;
    //min-height: 200vh;
 }
 
 .container{
-    padding: 1.375rem 5.75rem;
-    //margin-left: 2.75rem;
+    padding: 3.375rem 7.75rem;
+    margin: 0 auto;
+
+    @include breakpoint-down(medium){
+        padding: 3.375rem 3.75rem;
+        margin: 0 auto;
+    }
+    
+    @include breakpoint-down(small){
+        padding: 2.5rem 1.5rem;
+        margin: 0 auto;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    &__row{
+        flex-direction: row;
+    }
+    &__col{
+        flex-direction: column;
+    }
+    
+}
+
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none;
+    }
 }

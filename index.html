@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="app/css/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app/css/styles.css" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/loopstudios/app/js/app.js" defer></script>
+    <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-    <div class="banner-image">
-        <header class="header container">
-            <div class="header__flex">
-
-                <a href="/" class="header__logo">
-                    <img src="/loopstudios/images/logo.svg" alt="logo">
-                </a>
-                <div class="header__links">
-                    <a href="#">About</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Events</a>
-                    <a href="#">Products</a>
-                    <a href="#">Support</a>
-                </div>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner__image">
+      <div class="overlay has-fade"></div>
+      <header class="header">
+        <nav class="container">
+          <div class="header__flex flex flex__row">
+            <a href="/loopstudios/" class="header__logo">
+              <img src="/loopstudios/images/logo.svg" alt="logo" />
+            </a>
+            <a
+              href="#"
+              id="btnHamburger"
+              class="header__toggle hide-for-desktop"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <div class="header__links hide-for-mobile">
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Events</a>
+              <a href="#">Products</a>
+              <a href="#">Support</a>
             </div>
+          </div>
+          <div class="header__mobile flex flex__col hide-for-desktop has-fade">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
 
-            <div class="header__title">
-                <fieldset>
-                    <div class="text">
-                        IMMERRSIVE ECPERIENCES THAT DELIVER
-                    </div> 
-                </fieldset>
-            </div>
-        </header>
+          <!-- MOBILE TITLE -->
+          <div class="header__title hide-for-desktop">
+            <fieldset>
+              <div class="text">IMMERRSIVE ECPERIENCES THAT DELIVER</div>
+            </fieldset>
+          </div>
+          <!-- END MOBILE TITLE -->
+
+          <div class="header__title hide-for-mobile">
+            <fieldset>
+              <div class="text">IMMERRSIVE ECPERIENCES THAT DELIVER</div>
+            </fieldset>
+          </div>
+        </nav>
+      </header>
+
+      <!--  -->
+
     </div>
-    <section>
-        <div class="image">
-            
-        </div>
-    </section>
 
     <!-- TODO: Mobile version of the header! -->
 
- <!-- About
+    <!-- About
 
   Immersive experiences that deliver
 
@@ -88,7 +128,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div> --> 
- 
-</body>
+  </div> -->
+  </body>
 </html>

@@ -1,0 +1,21 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+h1{
+    font-size: 6rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Josefin Sans';
+    //font-weight: 400;
+    font-size: $fontSizeMain;
+   //min-height: 200vh;
+}
+
+.container{
+    padding: 1.375rem 5.75rem;
+    //margin-left: 2.75rem;
+}

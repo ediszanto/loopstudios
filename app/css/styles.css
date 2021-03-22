@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans';
+  font-size: 0.9375rem;
+}
+
+.container {
+  padding: 1.375rem 5.75rem;
+}
+
+.banner-image {
+  position: relative;
+  background-image: url("/loopstudios/images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: top;
+  min-height: 34.375rem;
+}
+
+.header__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 0.6875rem;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 30%;
+  right: 30%;
+  bottom: -10px;
+  background: white;
+  opacity: 0;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__title fieldset {
+  border: 0.1rem solid white;
+  margin-top: 5rem;
+  width: 50%;
+}
+
+.header__title fieldset .text {
+  padding: 1.2rem;
+  margin-top: 0.5rem;
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 250;
+  line-height: 1;
+}
+/*# sourceMappingURL=styles.css.map */

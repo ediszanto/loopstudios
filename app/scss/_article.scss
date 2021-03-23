@@ -1,0 +1,65 @@
+.article{
+
+    margin-top: 6rem;
+
+    &__image{
+        background-image: url('/loopstudios/images/mobile/image-interactive.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 14rem;
+
+
+            @include breakpoint-up(large){
+                background-image: url('/loopstudios/images/mobile/image-interactive.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                min-height: 30rem;
+                width: 60%;
+                position: absolute;
+            }
+
+    }
+
+    &__text{
+        margin-top: 3.125rem;
+        background-color: $white;
+        position: relative;
+        
+        @include breakpoint-up(large){
+            margin-top: 14.125rem;
+            text-align: left;
+            padding: 5rem 5rem;
+            width: 36%;
+            left: 59%;
+            display: block;
+            position: relative;
+        }
+
+    }
+    
+    &__title{
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        
+        @include breakpoint-up(large){
+            font-size: 2.2rem;
+            text-align: left;
+        }
+    }
+
+    &__description{
+        margin-top: 1.9375rem;
+        color: $darkGray;
+        font-size: 1rem;
+        letter-spacing: 1.05;
+        text-align: center;
+        @include breakpoint-up(large){
+            text-align: left;
+            margin-top: 1.9375rem;
+        }
+    }
+}

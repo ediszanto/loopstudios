@@ -38,11 +38,12 @@
     </style>
   </head>
   <body>
+      <!-- HEADER -->
     <div class="banner__image">
       <div class="overlay has-fade"></div>
       <header class="header">
         <nav class="container">
-          <div class="header__flex flex flex__row">
+          <div class="header__flex flex flex__row flex-jc-sb">
             <a href="/loopstudios/" class="header__logo">
               <img src="/loopstudios/images/logo.svg" alt="logo" />
             </a>
@@ -63,7 +64,7 @@
               <a href="#">Support</a>
             </div>
           </div>
-          <div class="header__mobile flex flex__col hide-for-desktop has-fade">
+          <div class="header__mobile flex flex__col flex-jc-sb hide-for-desktop has-fade">
             <a href="#">About</a>
             <a href="#">Careers</a>
             <a href="#">Events</a>
@@ -85,49 +86,199 @@
             </fieldset>
           </div>
         </nav>
-      </header>
-
-      <!--  -->
-
+      </header>      
     </div>
 
-    <!-- TODO: Mobile version of the header! -->
+    <!-- ARTICLE -->
+    <section class="article">
+      <div class="container">
+          <div class="article__image">
+               <!-- <img src="/loopstudios/images/desktop/image-interactive.jpg" alt="article"> -->
+          </div>
+          <div class="article__text">
+              <div class="article__title">
+                The leader in interactive VR
+              </div>
+              <div class="article__description">
+                Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                projects for some of the best companies around the globe. Our award-winning 
+                creations have transformed businesses through digital experiences that bind 
+                to their brand.
+              </div>
+          </div>
+      </div>
+    </section>
 
-    <!-- About
+    <!-- CARDS DESKTOP -->
+    <section class="cards">
+        <div class="container">
 
-  Immersive experiences that deliver
+                <div class="cards__head flex flex__row flex-jc-sb hide-for-mobile">
+                    <div class="cards__intro">OUR CREATIONS</div> 
+                    <button type="button" class="button hide-for-mobile">SEE ALL</button>
+                </div>
+                <div class="cards__head hide-for-desktop">
+                    <div class="cards__intro">OUR CREATIONS</div> 
+                    <button type="button" class="button hide-for-mobile">SEE ALL</button>
+                </div>
+                <div class="cards__items__grid">
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-deep-earth.jpg" alt="deep earth">
+                        </div>
+                        <div class="cards__title">DEEP <br> EARTH</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-night-arcade.jpg" alt="night arcade">
+                        </div>
+                        <div class="cards__title">NIGHT <br> ARCADE</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-soccer-team.jpg" alt="SOCCER TEAM">
+                        </div>
+                        <div class="cards__title">SOCCER <br> TEAM</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-grid.jpg" alt="THE GRID">
+                        </div>
+                        <div class="cards__title">THE <br> GRID</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-from-above.jpg "alt="FROM UP ABOVE VR">
+                        </div>
+                        <div class="cards__title">FROM UP <br> ABOVE VR</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-pocket-borealis.jpg" alt="POCKET BOREALIS">
+                        </div>
+                        <div class="cards__title">POCKET <br> BOREALIS</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-curiosity.jpg" alt="THE CURIOSITY">
+                        </div>
+                        <div class="cards__title">THE <br> CURIOSITY</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-fisheye.jpg" alt="MAKE IT FISHEYE">
+                        </div>
+                        <div class="cards__title">MAKE IT <br> FISHEYE</div>
+                    </div>
+                    <!-- END Card Item -->
+                </div>
+                <button type="button" class="button center hide-for-desktop">SEE ALL</button>
+        </div>
+      </section>
+      <!-- END CARDS DESKTOP -->
+      <!-- CARDS MOBILE -->
+    <section class="cards">
+        <div class="container">
 
-  The leader in interactive VR
+                <div class="cards__head flex flex__row flex-jc-sb hide-for-mobile">
+                    <div class="cards__intro">OUR CREATIONS</div> 
+                    <button type="button" class="button hide-for-mobile">SEE ALL</button>
+                </div>
+                <div class="cards__head hide-for-desktop">
+                    <div class="cards__intro">OUR CREATIONS</div> 
+                    <button type="button" class="button hide-for-mobile">SEE ALL</button>
+                </div>
+                <div class="cards__items__grid">
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-deep-earth.jpg" alt="deep earth">
+                        </div>
+                        <div class="cards__title">DEEP <br> EARTH</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-night-arcade.jpg" alt="night arcade">
+                        </div>
+                        <div class="cards__title">NIGHT <br> ARCADE</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-soccer-team.jpg" alt="SOCCER TEAM">
+                        </div>
+                        <div class="cards__title">SOCCER <br> TEAM</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-grid.jpg" alt="THE GRID">
+                        </div>
+                        <div class="cards__title">THE <br> GRID</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-from-above.jpg "alt="FROM UP ABOVE VR">
+                        </div>
+                        <div class="cards__title">FROM UP <br> ABOVE VR</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-pocket-borealis.jpg" alt="POCKET BOREALIS">
+                        </div>
+                        <div class="cards__title">POCKET <br> BOREALIS</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-curiosity.jpg" alt="THE CURIOSITY">
+                        </div>
+                        <div class="cards__title">THE <br> CURIOSITY</div>
+                    </div>
+                    <!-- END Card Item -->
+                    <!-- Card Item -->
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="/loopstudios/images/desktop/image-fisheye.jpg" alt="MAKE IT FISHEYE">
+                        </div>
+                        <div class="cards__title">MAKE IT <br> FISHEYE</div>
+                    </div>
+                    <!-- END Card Item -->
+                </div>
+                <button type="button" class="button center hide-for-desktop">SEE ALL</button>
+        </div>
+    </section>
+    <!-- END CARDS MOBILE -->
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
+   
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  </div>
   </body>
 </html>

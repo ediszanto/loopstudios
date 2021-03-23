@@ -12,12 +12,13 @@ body{
     font-family:  'Josefin Sans', sans-serif;
     //font-weight: 400;
     font-size: $fontSizeMain;
-   //min-height: 200vh;
+    min-height: 200vh;
 }
 
 .container{
     padding: 3.375rem 7.75rem;
     margin: 0 auto;
+    //overflow: hidden;
 
     @include breakpoint-down(medium){
         padding: 3.375rem 3.75rem;
@@ -30,13 +31,37 @@ body{
     }
 }
 
+// button
+.button{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid $black;
+    color: $black;
+    font-size: 1rem;
+    width: 9.8125rem;
+    height: 2.5rem;
+
+    &:hover{
+        background-color: $black;
+        color: $white;
+    }
+}
+
 .flex{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-jc-sa{
+        justify-content: space-around;
+    }
     &__row{
         flex-direction: row;
     }
     &__col{
+        // flex-wrap: wrap;
         flex-direction: column;
     }
     

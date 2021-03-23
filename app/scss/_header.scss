@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: top;
     //min-height: 35rem;
-    min-height: 10.9375rem;
+    min-height: 35rem;
     
     @include breakpoint-down(small){
         background-image: url("/loopstudios/images/mobile/image-hero.jpg");
@@ -156,7 +156,6 @@
             @include breakpoint-down(small){
                 width: 50%;
                 //justify-content: center;
-                opacity: 0;
             }
         }
         @include breakpoint-down(medium){

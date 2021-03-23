@@ -3,7 +3,7 @@ const btnHamburger =document.querySelector('#btnHamburger');
 const header = document.querySelector('.header');
 const bannerImage =document.querySelector('.banner__image')
 const fadeElemems = document.querySelectorAll('.has-fade');
-inages
+
 
 btnHamburger.addEventListener('click', () => {
     if(!header.classList.contains('open')){

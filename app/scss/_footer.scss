@@ -1,0 +1,155 @@
+.footer{
+    @include breakpoint-down(medium){
+        text-align: center;
+    }
+    background-color: $black;
+
+    .container{
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "logo social"
+                "links copyright";
+        }
+    }
+
+    &__logo{
+        grid-area: logo;
+        img{
+            width: 9.0625rem;
+            height: 1.5rem;
+            // @include breakpoint-up(large){
+            //     padding-top: 3%;
+            // }
+        }
+    }
+    &__links{
+        grid-area: links;
+        a{
+            margin-top: 1.8rem;
+            display: block;
+            text-decoration: none;
+            color: $white;
+            @include breakpoint-up(large){
+                display: inline-block;
+                vertical-align: top;
+                text-decoration: none;
+                color: $white;
+                &:not(:last-child){
+                    margin-right: 1rem;
+                }
+            }
+            @include breakpoint-up(large){
+                &::before{
+                    content: "";
+                    position: relative;
+                    display: block;
+                    height: 2px;
+                    width: 50%;
+                    left: 25%;
+                    bottom: -21px;
+                    background: white;
+                    opacity: 0;
+                }    
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                        transition: opacity 300ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    &__social{
+        grid-area: social;
+        margin-top: 1.2rem;
+        @include breakpoint-up(large){
+            margin-top: 0;
+        }
+        padding: 5px;
+        a{
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+            &:hover{
+                border-bottom: 2px solid $white;
+               transition: all 300ms ease-in-out;
+            }
+            &:hover::after{
+                opacity: 1;
+            }
+            @include breakpoint-up(large){
+                &::before{
+                    content: "";
+                    position: absolute;
+                    //display: block;
+                    height: 2px;
+                    width: 100%;
+                    // left: 25%;
+                    bottom: 0;
+                    background: white;
+                   // opacity: 0;
+                }    
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                        transition: opacity 300ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+        // svg{
+        //     @include breakpoint-up(large){
+        //         &::before{
+        //             border-bottom: 2px solid $white;
+        //         //     content: "";
+        //         //     position: absolute;
+        //         //     //display: block;
+        //         //     height: 2px;
+        //         //     width: 100%;
+        //         //     // left: 25%;
+        //         //     bottom: 0;
+        //         //     background: white;
+        //         //    // opacity: 0;
+        //         }    
+        //         &:hover{
+        //             &::before{
+        //                 opacity: 1;
+        //                 transition: opacity 300ms ease-in-out;
+        //             }
+        //         }
+        //     }
+        // }
+    &__copyright{
+        margin-top: 1.2rem;
+        color: $darkGray;
+        font-size: 0.8rem;
+        grid-area: copyright;
+        @include breakpoint-up(large){
+            margin-top: 1.75rem;
+        }
+    }
+    &__attribution{
+        margin-top: 1.2rem;
+        font-size: 0.5rem;
+        color: $white;
+        > a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
+.col1{
+    @include breakpoint-up(large){
+        text-align: left;
+    }
+}
+.col2{
+    @include breakpoint-up(large){
+        text-align: right;
+    }
+ 
+}

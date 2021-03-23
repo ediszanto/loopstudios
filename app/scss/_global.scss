@@ -2,17 +2,21 @@
 html{
     box-sizing: border-box;
     font-size: 100%;
+    overflow-x: hidden;
 }
 h1{
     font-size: 6rem;
 }
 body{
+    //overflow: hidden;
     margin: 0;
     padding: 0;
     font-family:  'Josefin Sans', sans-serif;
-    //font-weight: 400;
     font-size: $fontSizeMain;
-    min-height: 200vh;
+    @include breakpoint-down(small){
+        margin: auto;
+        text-align: center;
+    }
 }
 
 .container{
